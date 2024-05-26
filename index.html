@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="Madhu Kumar">
+    <title>My Dream XI Team</title>
+    <meta name="description" content="My dream football team consisting of top-class players in their own positions.">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section class="slider-container">
+       <!--slider-images contains all images and details-->
+        <div class="slider-images">
+
+            <div class="slider-img">
+                <img src="images/ronaldo.jpg" alt="CR7" >
+                <h1>Ronaldo</h1>
+                <div class="details">
+                    <h2>Ronaldo</h2>
+                    <p>Striker</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="images/neymar.jpeg" alt="Neymar JR" >
+                <h1>Neymar JR</h1>
+                <div class="details">
+                    <h2>Neymar JR</h2>
+                    <p>Left-Winger</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="images/messi1.jpg" alt="Messi" >
+                <h1>Messi</h1>
+                <div class="details">
+                    <h2>Messi</h2>
+                    <p>Right-Winger</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="images/kroos.jpg" alt="Toni Kroos" >
+                <h1>Toni Kroos</h1>
+                <div class="details">
+                    <h2>Toni Kroos</h2>
+                    <p>Midfielder</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="images/iniesta.jpg" alt="Iniesta" >
+                <h1>Iniesta</h1>
+                <div class="details">
+                    <h2>Iniesta</h2>
+                    <p>Midfielder</p>
+                </div>
+            </div>
+
+            <div class="slider-img active"> <!-- active: default image -->
+                <img src="images/modric.jpg" alt="Luka Modric" >
+                <h1>Luka Modric</h1>
+                <div class="details">
+                    <h2>Luka Modric</h2>
+                    <p>Midfielder</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="images/marcelo.jpg" alt="Marcelo" >
+                <h1>Marcelo</h1>
+                <div class="details">
+                    <h2>Marcelo</h2>
+                    <p>Left-Back</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="images/ramos.jpg" alt="Ramos" >
+                <h1>Ramos</h1>
+                <div class="details">
+                    <h2>Ramos</h2>
+                    <p>Center-Back</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="images/pique.jpg" alt="Pique" >
+                <h1>Pique</h1>
+                <div class="details">
+                    <h2>Pique</h2>
+                    <p>Center-Back</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="images/alves.jpg" alt="Dani Alves" >
+                <h1>Dani Alves</h1>
+                <div class="details">
+                    <h2>Dani Alves</h2>
+                    <p>Right-Back</p>
+                </div>
+            </div>
+
+            <div class="slider-img">
+                <img src="images/buffon.png" alt="Buffon" >
+                <h1>Buffon</h1>
+                <div class="details">
+                    <h2>Buffon</h2>
+                    <p>Goal-Keeper</p>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <!-- jQuery is used to change images when clicked by removing active of previous image
+         and change it to current image clicked -->
+    <script>
+        jQuery(document).ready(function($){
+            $(`.slider-img`).on('click',function(){
+                $(`.slider-img`).removeClass("active");
+                $(this).addClass("active");
+            })
+        });
+    </script>
+</body>
+</html>
